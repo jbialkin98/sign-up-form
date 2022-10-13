@@ -1,0 +1,27 @@
+form {
+    border: solid black;
+    width: 80%
+}
+
+.form-information {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 20px;
+}
+
+.label-set {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+}
+
+
+input {
+    width: 150px;
+    height: 20px;
+}
