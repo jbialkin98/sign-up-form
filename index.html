@@ -8,57 +8,63 @@
     <title>Sign-up Form</title>
 </head>
 <body>
-    <div class="page-top">
-        <h1>This is not a real online service! You know you need something
-            like this in your life to help you realize your deepest dreams.
-            Sign up <em>now</em> to get started.
-        </h1>
-        <h1>You <em>know</em> you want to.</h1>
+    <div class="container">
+        <div class="left-side">
+        </div>
+        <div class="right-side">
+            <div class="page-top">
+                <h1>This is not a real online service! You know you need something
+                    like this in your life to help you realize your deepest dreams.
+                    Sign up <em>now</em> to get started.
+                </h1>
+                <h1>You <em>know</em> you want to.</h1>
+            </div>
+            <form action="" method="post">
+                <h1>Let's do this!</h1>
+
+                <div class="form-information">
+                    <div class="form-row">
+                        <div class="label-set">
+                            <label for="first-name">First Name:</label>
+                            <input type="text" name="first-name" id="first-name">
+                        </div>
+
+                        <div class="label-set">
+                            <label for="last-name">Last Name:</label>
+                            <input type="text" name="last-name" id="last-name">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="label-set">
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+
+                        <div class="label-set">
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" name="phone-number" id="phone-number">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="label-set">
+                            <label for="password">Password:</label>
+                            <input type="password" name="password" id="password">
+                        </div>
+
+                        <div class="label-set">
+                            <label for="password-confirm">Confirm Password:</label>
+                            <input type="password" name="password-confirm" id="password-confirm">
+                        </div>
+                    </div>
+                </div>
+                <div class="page-bottom">
+                    <button>Create Account</button>
+                    <p>Already have an account? <a href="">Log in</a></p>
+                </div>
+            </form>
+        </div>
     </div>
-    <form action="" method="post">
-        <h1>Let's do this!</h1>
-
-        <div class="form-information">
-            <div class="form-row">
-                <div class="label-set">
-                    <label for="first-name">First Name:</label>
-                    <input type="text" name="first-name" id="first-name">
-                </div>
-
-                <div class="label-set">
-                    <label for="last-name">Last Name:</label>
-                    <input type="text" name="last-name" id="last-name">
-                </div>
-            </div>
-
-            <div class="form-row">
-                <div class="label-set">
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email">
-                </div>
-
-                <div class="label-set">
-                    <label for="phone">Phone Number:</label>
-                    <input type="tel" name="phone-number" id="phone-number">
-                </div>
-            </div>
-
-            <div class="form-row">
-                <div class="label-set">
-                    <label for="password">Password:</label>
-                    <input type="password" name="password" id="password">
-                </div>
-
-                <div class="label-set">
-                    <label for="password-confirm">Confirm Password:</label>
-                    <input type="password" name="password-confirm" id="password-confirm">
-                </div>
-            </div>
-        </div>
-        <div class="page-bottom">
-            <button>Create Account</button>
-            <p>Already have an account? <a href="">Log in</a></p>
-        </div>
-    </form>
 </body>
 </html>

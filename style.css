@@ -1,3 +1,32 @@
+.container {
+    display: flex;
+}
+
+.left-side {
+    background-image: url(background.jpg);
+    width: 40vw;
+    height: 100vh;
+    background-position: center;
+    background-size: 100vh auto;
+    background-repeat: no-repeat;
+}
+
+.right-side {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page-top {
+    width: 80%;
+}
+
+.background-image {
+    width: 100%;
+    object-fit: none;
+}
+
 form {
     border: solid black;
     width: 80%;
