@@ -2,24 +2,25 @@ form {
     border: solid black;
     width: 80%;
     padding-left: 20px;
+    margin: 0 auto;
 }
 
 .form-information {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    gap: 50px;
+    gap: 20px;
 }
 
 .label-set {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: clamp(200px, 40%, 600px);
 }
 
 .form-row {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 input {
@@ -29,4 +30,33 @@ input {
 
 button {
     margin: 20px 0;
+}
+
+@media only screen and (max-width: 700px) {
+    /* body {
+        display: flex;
+        flex-direction: column;
+    } */
+
+    .form-row {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .page-bottom {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    button {
+        width: 150px;
+        margin: 15px;
+        margin-bottom: 0px;
+    }
+
 }
