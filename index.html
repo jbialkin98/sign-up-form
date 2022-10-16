@@ -34,37 +34,37 @@
                 <div class="form-information">
                     <div class="form-row">
                         <div class="label-set">
-                            <label for="first-name">First Name:</label>
-                            <input type="text" name="first-name" id="first-name" placeholder="John">
+                            <label for="first-name">First Name: <span class="asteric">*</span></label>
+                            <input type="text" name="first-name" id="first-name" placeholder="John" autocomplete="given-name" required>
                         </div>
 
                         <div class="label-set">
-                            <label for="last-name">Last Name:</label>
-                            <input type="text" name="last-name" id="last-name" placeholder="Doe">
-                        </div>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="label-set">
-                            <label for="email">Email:</label>
-                            <input type="email" name="email" id="email" placeholder="JohnDoe@gmail.com">
-                        </div>
-
-                        <div class="label-set">
-                            <label for="phone">Phone Number:</label>
-                            <input type="tel" name="phone-number" id="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+                            <label for="last-name">Last Name: <span class="asteric">*</span></label>
+                            <input type="text" name="last-name" id="last-name" placeholder="Doe" autocomplete="family-name" required>
                         </div>
                     </div>
 
                     <div class="form-row">
                         <div class="label-set">
-                            <label for="password">Password:</label>
-                            <input type="password" name="password" id="password" placeholder="**********">
+                            <label for="email">Email: <span class="asteric">*</span></label>
+                            <input type="email" name="email" id="email" placeholder="JohnDoe@gmail.com" autocomplete="email" required>
                         </div>
 
                         <div class="label-set">
-                            <label for="password-confirm">Confirm Password:</label>
-                            <input type="password" name="password-confirm" id="password-confirm" placeholder="**********">
+                            <label for="phone">Phone Number: <span class="asteric">*</span></label>
+                            <input type="tel" name="phone-number" id="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" autocomplete="tel" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="label-set">
+                            <label for="password">Password: <span class="asteric">*</span></label>
+                            <input type="password" name="password" id="password" placeholder="**********" autocomplete="new-password" required>
+                        </div>
+
+                        <div class="label-set">
+                            <label for="password-confirm">Confirm Password: <span class="asteric">*</span></label>
+                            <input type="password" name="password-confirm" id="password-confirm" placeholder="**********" autocomplete="new-password" required>
                         </div>
                     </div>
 
