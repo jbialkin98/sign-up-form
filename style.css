@@ -86,17 +86,18 @@ form {
 .label-set {
     display: flex;
     flex-direction: column;
+    gap: 5px;
     width: clamp(200px, 40%, 600px);
 }
 
 .form-row {
     display: flex;
-    gap: 20px;
+    gap: 30px;
 }
 
 input {
     width: 100%;
-    height: 20px;
+    height: 30px;
     border: solid white;
     background-color: black;
     border-radius: 5px;
@@ -105,6 +106,10 @@ input {
 
 input::placeholder {
     color: rgb(95, 95, 95);
+}
+
+input:focus {
+    border: solid rgb(80, 80, 249);
 }
 
 input:invalid {
@@ -129,6 +134,29 @@ button:hover {
 }
 
 @media only screen and (max-width: 700px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-side {
+        height: 30vh;
+        width: 100vw;
+    }
+
+    .right-side {
+        height: 70vh;
+        width: 100vw;
+    }
+
+    .logo-banner {
+        top: 10vh;
+    }
+
+    .page-top {
+        margin-top: 50px;
+    }
+
     .form-row {
         display: flex;
         flex-direction: column;
