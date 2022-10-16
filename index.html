@@ -35,44 +35,48 @@
                     <div class="form-row">
                         <div class="label-set">
                             <label for="first-name">First Name:</label>
-                            <input type="text" name="first-name" id="first-name">
+                            <input type="text" name="first-name" id="first-name" placeholder="John">
                         </div>
 
                         <div class="label-set">
                             <label for="last-name">Last Name:</label>
-                            <input type="text" name="last-name" id="last-name">
+                            <input type="text" name="last-name" id="last-name" placeholder="Doe">
                         </div>
                     </div>
 
                     <div class="form-row">
                         <div class="label-set">
                             <label for="email">Email:</label>
-                            <input type="email" name="email" id="email">
+                            <input type="email" name="email" id="email" placeholder="JohnDoe@gmail.com">
                         </div>
 
                         <div class="label-set">
                             <label for="phone">Phone Number:</label>
-                            <input type="tel" name="phone-number" id="phone-number">
+                            <input type="tel" name="phone-number" id="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
                         </div>
                     </div>
 
                     <div class="form-row">
                         <div class="label-set">
                             <label for="password">Password:</label>
-                            <input type="password" name="password" id="password">
+                            <input type="password" name="password" id="password" placeholder="**********">
                         </div>
 
                         <div class="label-set">
                             <label for="password-confirm">Confirm Password:</label>
-                            <input type="password" name="password-confirm" id="password-confirm">
+                            <input type="password" name="password-confirm" id="password-confirm" placeholder="**********">
                         </div>
                     </div>
+
+                    <div class="page-bottom">
+                        <button>Create Account</button>
+                        <p>Already have an account? <a href="">Log in</a></p>
+                    </div>
                 </div>
-                <div class="page-bottom">
-                    <button>Create Account</button>
-                    <p>Already have an account? <a href="">Log in</a></p>
-                </div>
+                
             </form>
+            
+            
         </div>
     </div>
 </body>

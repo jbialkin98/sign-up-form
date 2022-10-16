@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+:root {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: black;
+}
 .container {
     display: flex;
 }
@@ -5,12 +15,17 @@
 .left-side {
     background-image: url(background.jpg);
     /* https://unsplash.com/photos/wOnNwh57DGA?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink */
-    width: 40vw;
     height: 100vh;
+    width: 40vw;
     background-position: center;
     background-size: 100vh auto;
     background-repeat: no-repeat;
     display: flex;
+}
+
+.background-image {
+    width: 100%;
+    object-fit: none;
 }
 
 .logo-banner {
@@ -33,28 +48,23 @@
 }
 
 @font-face  {
-    font-family: NorseBold;
+    font-family: 'NorseBold';
     src: url("Norse-Bold.otf") format("opentype");
 }
 
 .logo-text {
     color: white;
-    font-family: NorseBold;
+    font-family: 'NorseBold', sans-serif;
     font-size: 7rem;
     opacity: 1;
 }
 
 .right-side {
-
+    width: 60vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.background-image {
-    width: 100%;
-    object-fit: none;
 }
 
 .page-top {
@@ -65,7 +75,6 @@ form {
     border: solid black;
     width: 80%;
     padding-left: 20px;
-    margin: 0 auto;
 }
 
 .form-information {
@@ -83,24 +92,43 @@ form {
 .form-row {
     display: flex;
     gap: 20px;
-    flex-wrap: wrap;
 }
 
 input {
     width: 100%;
     height: 20px;
+    border: solid white;
+    background-color: black;
+    border-radius: 5px;
+    color: inherit;
+}
+
+input::placeholder {
+    color: rgb(95, 95, 95);
+}
+
+input:invalid {
+    border: solid red;
 }
 
 button {
-    margin: 20px 0;
+    font: inherit;
+    width: 175px;
+    height: 40px;
+    border-radius: 5px;
+    border: solid white;
+    background-color: black;
+    color: inherit;
+}
+
+button:hover {
+    color: black;
+    background-color: white;
+    border: solid black;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 700px) {
-    /* body {
-        display: flex;
-        flex-direction: column;
-    } */
-
     .form-row {
         display: flex;
         flex-direction: column;
@@ -113,7 +141,9 @@ button {
         display: flex;
         flex-direction: column;
         align-items: center;
+        align-self: center;
         gap: 10px;
+        margin: 0;
     }
 
     button {
